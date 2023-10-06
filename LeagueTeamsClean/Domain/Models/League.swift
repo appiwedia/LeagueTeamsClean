@@ -7,7 +7,12 @@ struct League: Identifiable {
     let sport: String?
     let leagueAlternate: String?
 
-    internal init(id: Int, name: String? = nil, sport: String? = nil, leagueAlternate: String? = nil) {
+    init(
+        id: Int,
+        name: String? = nil,
+        sport: String? = nil,
+        leagueAlternate: String? = nil
+    ) {
         self.id = id
         self.name = name
         self.sport = sport

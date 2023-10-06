@@ -33,7 +33,11 @@ final class TeamsViewModel: ObservableObject {
         }
     }
 
-    init(isLoading: Bool = true, teamsService: TeamsRepository, leaguesService: LeaguesRepository) {
+    init(
+        isLoading: Bool = true,
+        teamsService: TeamsRepository,
+        leaguesService: LeaguesRepository
+    ) {
         self.isLoading = isLoading
         self.teamsService = teamsService
         self.leaguesService = leaguesService

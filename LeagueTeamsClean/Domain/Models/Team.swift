@@ -23,7 +23,15 @@ struct Team: Identifiable, Hashable, Comparable {
     let league: String?
     let descriptionEN: String?
 
-    init(id: Int, name: String? = nil, badgeImageUrl: URL? = nil, bannerImageUrl: URL? = nil, country: String? = nil, league: String? = nil, descriptionEN: String? = nil) {
+    init(
+        id: Int,
+        name: String? = nil,
+        badgeImageUrl: URL? = nil,
+        bannerImageUrl: URL? = nil,
+        country: String? = nil,
+        league: String? = nil,
+        descriptionEN: String? = nil
+    ) {
         self.id = id
         self.name = name
         self.badgeImageUrl = badgeImageUrl

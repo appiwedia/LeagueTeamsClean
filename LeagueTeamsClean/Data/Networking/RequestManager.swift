@@ -5,7 +5,7 @@ protocol RequestManagerProtocol {
 }
 
 struct RequestManager: RequestManagerProtocol {
-    internal let apiManager: APIManagerProtocol
+    let apiManager: APIManagerProtocol
 
     init(apiManager: APIManagerProtocol = APIManager()) {
         self.apiManager = apiManager
