@@ -1,4 +1,5 @@
 import Foundation
+import LeagueTeamsCleanNetworking
 
 // MARK: - Extension (DTO)
 extension Team {

@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import LeagueTeamsCleanNetworking
 
 struct LeaguesRepositoryDefault {
     private let requestManager: RequestManagerProtocol

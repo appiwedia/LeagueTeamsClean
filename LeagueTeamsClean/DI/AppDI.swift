@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import LeagueTeamsCleanNetworking
 
 protocol AppDIInterface {
     func teamsViewModelDependencies() -> TeamsViewModel

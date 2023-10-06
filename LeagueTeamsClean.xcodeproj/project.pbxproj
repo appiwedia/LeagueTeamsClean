@@ -21,19 +21,6 @@
 		308B11272ACF574600D450FD /* Team+DTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 308B110E2ACF55D700D450FD /* Team+DTO.swift */; };
 		308B11282ACF574600D450FD /* League.swift in Sources */ = {isa = PBXBuildFile; fileRef = 308B11122ACF55DB00D450FD /* League.swift */; };
 		308B11292ACF574600D450FD /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = 308B110F2ACF55D700D450FD /* Team.swift */; };
-		308B112A2ACF576200D450FD /* TeamsDTOResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 308B11012ACF54C700D450FD /* TeamsDTOResponse.swift */; };
-		308B112B2ACF576200D450FD /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 308B10F92ACF54C700D450FD /* NetworkError.swift */; };
-		308B112C2ACF576200D450FD /* RequestType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 308B110C2ACF54C700D450FD /* RequestType.swift */; };
-		308B112D2ACF576200D450FD /* LeagueDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 308B11022ACF54C700D450FD /* LeagueDTO.swift */; };
-		308B112E2ACF576200D450FD /* LeaguesDTOResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 308B10FF2ACF54C700D450FD /* LeaguesDTOResponse.swift */; };
-		308B112F2ACF576200D450FD /* TeamDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 308B11032ACF54C700D450FD /* TeamDTO.swift */; };
-		308B11302ACF576200D450FD /* LeaguesRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 308B11062ACF54C700D450FD /* LeaguesRequest.swift */; };
-		308B11312ACF576200D450FD /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 308B10F82ACF54C700D450FD /* APIManager.swift */; };
-		308B11322ACF576200D450FD /* RequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 308B10F72ACF54C700D450FD /* RequestManager.swift */; };
-		308B11332ACF576200D450FD /* APIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 308B10F52ACF54C700D450FD /* APIConstants.swift */; };
-		308B11342ACF576200D450FD /* RequestProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 308B11092ACF54C700D450FD /* RequestProtocol.swift */; };
-		308B11352ACF576200D450FD /* DataParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 308B10FB2ACF54C700D450FD /* DataParser.swift */; };
-		308B11372ACF576200D450FD /* TeamsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 308B110B2ACF54C700D450FD /* TeamsRequest.swift */; };
 		308B113A2ACF57FB00D450FD /* LeaguesRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 308B11392ACF57F400D450FD /* LeaguesRepository.swift */; };
 		308B113B2ACF57FB00D450FD /* TeamsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 308B11382ACF57E900D450FD /* TeamsRepository.swift */; };
 		308B11482ACF599F00D450FD /* TeamsRepositoryMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 308B11402ACF598D00D450FD /* TeamsRepositoryMock.swift */; };
@@ -46,6 +33,7 @@
 		308B11582ACF623300D450FD /* search_all_teams.php.json in Resources */ = {isa = PBXBuildFile; fileRef = 308B11542ACF60B600D450FD /* search_all_teams.php.json */; };
 		308B115C2ACF697600D450FD /* LeagueRepositoryDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = 308B115B2ACF697600D450FD /* LeagueRepositoryDefault.swift */; };
 		308B115E2ACF6B0200D450FD /* TeamsRepositoryDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = 308B115D2ACF6B0200D450FD /* TeamsRepositoryDefault.swift */; };
+		30E8875B2AD02D5D005D6715 /* LeagueTeamsCleanNetworking in Frameworks */ = {isa = PBXBuildFile; productRef = 30E8875A2AD02D5D005D6715 /* LeagueTeamsCleanNetworking */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,19 +54,6 @@
 		308B10BA2ACF4DF900D450FD /* LeagueTeamsClean.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LeagueTeamsClean.entitlements; sourceTree = "<group>"; };
 		308B10BF2ACF4DF900D450FD /* LeagueTeamsCleanTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LeagueTeamsCleanTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		308B10F22ACF545A00D450FD /* AppDI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDI.swift; sourceTree = "<group>"; };
-		308B10F52ACF54C700D450FD /* APIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConstants.swift; sourceTree = "<group>"; };
-		308B10F72ACF54C700D450FD /* RequestManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestManager.swift; sourceTree = "<group>"; };
-		308B10F82ACF54C700D450FD /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
-		308B10F92ACF54C700D450FD /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
-		308B10FB2ACF54C700D450FD /* DataParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataParser.swift; sourceTree = "<group>"; };
-		308B10FF2ACF54C700D450FD /* LeaguesDTOResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaguesDTOResponse.swift; sourceTree = "<group>"; };
-		308B11012ACF54C700D450FD /* TeamsDTOResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamsDTOResponse.swift; sourceTree = "<group>"; };
-		308B11022ACF54C700D450FD /* LeagueDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeagueDTO.swift; sourceTree = "<group>"; };
-		308B11032ACF54C700D450FD /* TeamDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamDTO.swift; sourceTree = "<group>"; };
-		308B11062ACF54C700D450FD /* LeaguesRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaguesRequest.swift; sourceTree = "<group>"; };
-		308B11092ACF54C700D450FD /* RequestProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestProtocol.swift; sourceTree = "<group>"; };
-		308B110B2ACF54C700D450FD /* TeamsRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamsRequest.swift; sourceTree = "<group>"; };
-		308B110C2ACF54C700D450FD /* RequestType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestType.swift; sourceTree = "<group>"; };
 		308B110E2ACF55D700D450FD /* Team+DTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Team+DTO.swift"; sourceTree = "<group>"; };
 		308B110F2ACF55D700D450FD /* Team.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Team.swift; sourceTree = "<group>"; };
 		308B11112ACF55DB00D450FD /* League+DTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "League+DTO.swift"; sourceTree = "<group>"; };
@@ -100,6 +75,7 @@
 		308B115B2ACF697600D450FD /* LeagueRepositoryDefault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeagueRepositoryDefault.swift; sourceTree = "<group>"; };
 		308B115D2ACF6B0200D450FD /* TeamsRepositoryDefault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamsRepositoryDefault.swift; sourceTree = "<group>"; };
 		308B115F2ACF6FB600D450FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		30E887572AD02B9D005D6715 /* LeagueTeamsCleanNetworking */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = LeagueTeamsCleanNetworking; path = ../../LeagueTeamsCleanNetworking; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +83,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				30E8875B2AD02D5D005D6715 /* LeagueTeamsCleanNetworking in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -126,6 +103,7 @@
 				308B10B02ACF4DF800D450FD /* LeagueTeamsClean */,
 				308B10C22ACF4DF900D450FD /* LeagueTeamsCleanTests */,
 				308B10AF2ACF4DF800D450FD /* Products */,
+				30E887592AD02D5D005D6715 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -141,6 +119,7 @@
 		308B10B02ACF4DF800D450FD /* LeagueTeamsClean */ = {
 			isa = PBXGroup;
 			children = (
+				30E887572AD02B9D005D6715 /* LeagueTeamsCleanNetworking */,
 				308B115F2ACF6FB600D450FD /* Info.plist */,
 				308B10E12ACF4EDE00D450FD /* App */,
 				308B10F12ACF543900D450FD /* DI */,
@@ -183,9 +162,10 @@
 		308B10DD2ACF4E4500D450FD /* Domain */ = {
 			isa = PBXGroup;
 			children = (
-				308B10EC2ACF528D00D450FD /* Models */,
 				308B10EB2ACF528500D450FD /* Mappers */,
+				308B10EC2ACF528D00D450FD /* Models */,
 				308B10ED2ACF52C300D450FD /* RepositoriesProtocol */,
+				30E887582AD02CB2005D6715 /* UseCases */,
 			);
 			path = Domain;
 			sourceTree = "<group>";
@@ -193,24 +173,9 @@
 		308B10DE2ACF4E4800D450FD /* Data */ = {
 			isa = PBXGroup;
 			children = (
-				308B10DF2ACF4E5400D450FD /* Networking */,
 				308B10E42ACF50B100D450FD /* Repositories */,
 			);
 			path = Data;
-			sourceTree = "<group>";
-		};
-		308B10DF2ACF4E5400D450FD /* Networking */ = {
-			isa = PBXGroup;
-			children = (
-				308B10F52ACF54C700D450FD /* APIConstants.swift */,
-				308B10F82ACF54C700D450FD /* APIManager.swift */,
-				308B10F72ACF54C700D450FD /* RequestManager.swift */,
-				308B10FA2ACF54C700D450FD /* Parser */,
-				308B10FC2ACF54C700D450FD /* Model */,
-				308B11042ACF54C700D450FD /* Request */,
-				308B10E62ACF51E700D450FD /* Errors */,
-			);
-			path = Networking;
 			sourceTree = "<group>";
 		};
 		308B10E02ACF4E7600D450FD /* Configuration */ = {
@@ -244,14 +209,6 @@
 				308B115D2ACF6B0200D450FD /* TeamsRepositoryDefault.swift */,
 			);
 			path = Repositories;
-			sourceTree = "<group>";
-		};
-		308B10E62ACF51E700D450FD /* Errors */ = {
-			isa = PBXGroup;
-			children = (
-				308B10F92ACF54C700D450FD /* NetworkError.swift */,
-			);
-			path = Errors;
 			sourceTree = "<group>";
 		};
 		308B10EB2ACF528500D450FD /* Mappers */ = {
@@ -297,76 +254,6 @@
 				308B10F22ACF545A00D450FD /* AppDI.swift */,
 			);
 			path = DI;
-			sourceTree = "<group>";
-		};
-		308B10FA2ACF54C700D450FD /* Parser */ = {
-			isa = PBXGroup;
-			children = (
-				308B10FB2ACF54C700D450FD /* DataParser.swift */,
-			);
-			path = Parser;
-			sourceTree = "<group>";
-		};
-		308B10FC2ACF54C700D450FD /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				308B11032ACF54C700D450FD /* TeamDTO.swift */,
-				308B11022ACF54C700D450FD /* LeagueDTO.swift */,
-				308B10FD2ACF54C700D450FD /* Response */,
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		308B10FD2ACF54C700D450FD /* Response */ = {
-			isa = PBXGroup;
-			children = (
-				308B10FE2ACF54C700D450FD /* Leagues */,
-				308B11002ACF54C700D450FD /* Teams */,
-			);
-			path = Response;
-			sourceTree = "<group>";
-		};
-		308B10FE2ACF54C700D450FD /* Leagues */ = {
-			isa = PBXGroup;
-			children = (
-				308B10FF2ACF54C700D450FD /* LeaguesDTOResponse.swift */,
-			);
-			path = Leagues;
-			sourceTree = "<group>";
-		};
-		308B11002ACF54C700D450FD /* Teams */ = {
-			isa = PBXGroup;
-			children = (
-				308B11012ACF54C700D450FD /* TeamsDTOResponse.swift */,
-			);
-			path = Teams;
-			sourceTree = "<group>";
-		};
-		308B11042ACF54C700D450FD /* Request */ = {
-			isa = PBXGroup;
-			children = (
-				308B11052ACF54C700D450FD /* Leagues */,
-				308B11092ACF54C700D450FD /* RequestProtocol.swift */,
-				308B110A2ACF54C700D450FD /* Teams */,
-				308B110C2ACF54C700D450FD /* RequestType.swift */,
-			);
-			path = Request;
-			sourceTree = "<group>";
-		};
-		308B11052ACF54C700D450FD /* Leagues */ = {
-			isa = PBXGroup;
-			children = (
-				308B11062ACF54C700D450FD /* LeaguesRequest.swift */,
-			);
-			path = Leagues;
-			sourceTree = "<group>";
-		};
-		308B110A2ACF54C700D450FD /* Teams */ = {
-			isa = PBXGroup;
-			children = (
-				308B110B2ACF54C700D450FD /* TeamsRequest.swift */,
-			);
-			path = Teams;
 			sourceTree = "<group>";
 		};
 		308B11132ACF56B700D450FD /* Leagues */ = {
@@ -479,6 +366,20 @@
 			path = Teams;
 			sourceTree = "<group>";
 		};
+		30E887582AD02CB2005D6715 /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		30E887592AD02D5D005D6715 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -495,6 +396,9 @@
 			dependencies = (
 			);
 			name = LeagueTeamsClean;
+			packageProductDependencies = (
+				30E8875A2AD02D5D005D6715 /* LeagueTeamsCleanNetworking */,
+			);
 			productName = LeagueTeamsClean;
 			productReference = 308B10AE2ACF4DF800D450FD /* LeagueTeamsClean.app */;
 			productType = "com.apple.product-type.application";
@@ -584,34 +488,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				308B11292ACF574600D450FD /* Team.swift in Sources */,
-				308B112B2ACF576200D450FD /* NetworkError.swift in Sources */,
-				308B11352ACF576200D450FD /* DataParser.swift in Sources */,
-				308B112F2ACF576200D450FD /* TeamDTO.swift in Sources */,
 				308B115E2ACF6B0200D450FD /* TeamsRepositoryDefault.swift in Sources */,
 				308B10F32ACF545A00D450FD /* AppDI.swift in Sources */,
 				308B11242ACF573200D450FD /* TeamsViewModel.swift in Sources */,
-				308B112D2ACF576200D450FD /* LeagueDTO.swift in Sources */,
-				308B112A2ACF576200D450FD /* TeamsDTOResponse.swift in Sources */,
 				308B11212ACF573200D450FD /* LeagueListView.swift in Sources */,
 				308B10B22ACF4DF800D450FD /* LeagueTeamsCleanApp.swift in Sources */,
 				308B11272ACF574600D450FD /* Team+DTO.swift in Sources */,
 				308B113B2ACF57FB00D450FD /* TeamsRepository.swift in Sources */,
-				308B11302ACF576200D450FD /* LeaguesRequest.swift in Sources */,
 				308B11262ACF574600D450FD /* League+DTO.swift in Sources */,
-				308B11332ACF576200D450FD /* APIConstants.swift in Sources */,
-				308B11372ACF576200D450FD /* TeamsRequest.swift in Sources */,
-				308B11312ACF576200D450FD /* APIManager.swift in Sources */,
 				308B11222ACF573200D450FD /* TeamDetailView.swift in Sources */,
 				308B11232ACF573200D450FD /* TeamDetailViewModel.swift in Sources */,
-				308B112E2ACF576200D450FD /* LeaguesDTOResponse.swift in Sources */,
 				308B11202ACF573200D450FD /* TeamBadgeView.swift in Sources */,
 				308B11282ACF574600D450FD /* League.swift in Sources */,
 				308B113A2ACF57FB00D450FD /* LeaguesRepository.swift in Sources */,
-				308B11342ACF576200D450FD /* RequestProtocol.swift in Sources */,
 				308B115C2ACF697600D450FD /* LeagueRepositoryDefault.swift in Sources */,
-				308B11322ACF576200D450FD /* RequestManager.swift in Sources */,
 				308B11252ACF573200D450FD /* TeamsView.swift in Sources */,
-				308B112C2ACF576200D450FD /* RequestType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -903,6 +794,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		30E8875A2AD02D5D005D6715 /* LeagueTeamsCleanNetworking */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = LeagueTeamsCleanNetworking;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 308B10A62ACF4DF800D450FD /* Project object */;
 }
