@@ -22,6 +22,10 @@
 		306BD8F12AD303E300F6751B /* League+DTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 308B11112ACF55DB00D450FD /* League+DTO.swift */; };
 		306BD8F22AD3044100F6751B /* GetTeamsUseCaseMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 306BD8E12AD2F63000F6751B /* GetTeamsUseCaseMock.swift */; };
 		306BD8F32AD3045E00F6751B /* GetTeamsUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 308B11452ACF598D00D450FD /* GetTeamsUseCaseTests.swift */; };
+		306BD8F62AD3221100F6751B /* Team+Mocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 306BD8F52AD3221100F6751B /* Team+Mocks.swift */; };
+		306BD8F72AD3221100F6751B /* Team+Mocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 306BD8F52AD3221100F6751B /* Team+Mocks.swift */; };
+		306BD8FA2AD3224700F6751B /* League+Mock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 306BD8F92AD3224700F6751B /* League+Mock.swift */; };
+		306BD8FB2AD3224700F6751B /* League+Mock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 306BD8F92AD3224700F6751B /* League+Mock.swift */; };
 		308B10B22ACF4DF800D450FD /* LeagueTeamsCleanApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 308B10B12ACF4DF800D450FD /* LeagueTeamsCleanApp.swift */; };
 		308B10B62ACF4DF900D450FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 308B10B52ACF4DF900D450FD /* Assets.xcassets */; };
 		308B10B92ACF4DF900D450FD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 308B10B82ACF4DF900D450FD /* Preview Assets.xcassets */; };
@@ -65,6 +69,8 @@
 		306BD8D62AD2DD3800F6751B /* GetLeaguesUseCaseProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetLeaguesUseCaseProtocol.swift; sourceTree = "<group>"; };
 		306BD8D72AD2DDB400F6751B /* GetLeaguesUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetLeaguesUseCase.swift; sourceTree = "<group>"; };
 		306BD8E12AD2F63000F6751B /* GetTeamsUseCaseMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetTeamsUseCaseMock.swift; sourceTree = "<group>"; };
+		306BD8F52AD3221100F6751B /* Team+Mocks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Team+Mocks.swift"; sourceTree = "<group>"; };
+		306BD8F92AD3224700F6751B /* League+Mock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "League+Mock.swift"; sourceTree = "<group>"; };
 		308B10AE2ACF4DF800D450FD /* LeagueTeamsClean.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LeagueTeamsClean.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		308B10B12ACF4DF800D450FD /* LeagueTeamsCleanApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeagueTeamsCleanApp.swift; sourceTree = "<group>"; };
 		308B10B52ACF4DF900D450FD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -188,6 +194,15 @@
 			path = JSON;
 			sourceTree = "<group>";
 		};
+		306BD8F82AD3222000F6751B /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				306BD8F52AD3221100F6751B /* Team+Mocks.swift */,
+				306BD8F92AD3224700F6751B /* League+Mock.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
 		308B10A52ACF4DF800D450FD = {
 			isa = PBXGroup;
 			children = (
@@ -227,6 +242,7 @@
 		308B10B72ACF4DF900D450FD /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
+				306BD8F82AD3222000F6751B /* Mocks */,
 				306BD8F42AD3184F00F6751B /* JSON */,
 				308B10B82ACF4DF900D450FD /* Preview Assets.xcassets */,
 			);
@@ -589,11 +605,13 @@
 				308B11212ACF573200D450FD /* LeagueListView.swift in Sources */,
 				308B10B22ACF4DF800D450FD /* LeagueTeamsCleanApp.swift in Sources */,
 				306BD8D92AD2DE1700F6751B /* GetLeaguesUseCaseProtocol.swift in Sources */,
+				306BD8FA2AD3224700F6751B /* League+Mock.swift in Sources */,
 				308B11272ACF574600D450FD /* Team+DTO.swift in Sources */,
 				308B113B2ACF57FB00D450FD /* TeamsRepository.swift in Sources */,
 				308B11262ACF574600D450FD /* League+DTO.swift in Sources */,
 				308B11222ACF573200D450FD /* TeamDetailView.swift in Sources */,
 				308B11232ACF573200D450FD /* TeamDetailViewModel.swift in Sources */,
+				306BD8F62AD3221100F6751B /* Team+Mocks.swift in Sources */,
 				308B11202ACF573200D450FD /* TeamBadgeView.swift in Sources */,
 				308B11282ACF574600D450FD /* League.swift in Sources */,
 				306BD8D42AD2DAFC00F6751B /* GetTeamsUseCaseProtocol.swift in Sources */,
@@ -612,6 +630,8 @@
 				306BD8EF2AD303A200F6751B /* TeamsRepositoryMock.swift in Sources */,
 				306BD8EB2AD2FF2D00F6751B /* TeamsRepository.swift in Sources */,
 				306BD8EA2AD2FD7B00F6751B /* League.swift in Sources */,
+				306BD8FB2AD3224700F6751B /* League+Mock.swift in Sources */,
+				306BD8F72AD3221100F6751B /* Team+Mocks.swift in Sources */,
 				306BD8F12AD303E300F6751B /* League+DTO.swift in Sources */,
 				308B114B2ACF599F00D450FD /* APIManagerMock.swift in Sources */,
 				306BD8F22AD3044100F6751B /* GetTeamsUseCaseMock.swift in Sources */,
