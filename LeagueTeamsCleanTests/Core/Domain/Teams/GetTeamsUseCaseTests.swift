@@ -12,15 +12,11 @@ import XCTest
 final class GetTeamsUseCaseTests: XCTestCase {
 
     var requestManagerMock = RequestManager(apiManager: APIManagerMock())
-    var teamsUseCase: GetTeamsUseCase?
+    var teamsUseCase: GetTeamsUseCaseMock?
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
-        teamsUseCase = GetTeamsUseCase(teamsRepository: TeamsRepositoryMock())
-    }
-
-    override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+        teamsUseCase = GetTeamsUseCaseMock()
     }
 
     func testAntiAlphabeticSort() async throws {

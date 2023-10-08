@@ -5,7 +5,7 @@ struct GetTeamsUseCaseMock {
     
     private let teamsRepository: TeamsRepository
     
-    init(teamsRepository: TeamsRepository = TeamsRepositoryDefault(requestManager: APIManagerMock())) {
+    init(teamsRepository: TeamsRepository = TeamsRepositoryMock()) {
         self.teamsRepository = teamsRepository
     }
 }

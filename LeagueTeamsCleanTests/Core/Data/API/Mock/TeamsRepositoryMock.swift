@@ -18,10 +18,10 @@ struct TeamsRepositoryMock {
 }
 
 extension TeamsRepositoryMock: TeamsRepository {
-    func fetchTeams(for league: LeagueTeamsClean.League) async throws -> [LeagueTeamsClean.Team] {
+    func fetchTeams(for league: League) async throws -> [Team] {
         let request = TeamsRequest.getTeamsForLeague(name: league.name)
         let teamsResponse: TeamsDTOResponse = try await
         requestManager.perform(request)
-        return teamsResponse.teams.compactMap(LeagueTeamsClean.Team.init)
+        return teamsResponse.teams.compactMap(Team.init)
     }
 }
