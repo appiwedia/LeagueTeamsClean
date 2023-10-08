@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Team: Identifiable, Hashable {
+struct Team: Identifiable {
     let id: Int
     let name: String?
     let badgeImageUrl: URL?

@@ -16,4 +16,3 @@ public enum LeaguesRequest: RequestProtocol {
     /// The HTTP method associated with the request.
     public var requestType: RequestType { .GET }
 }
-

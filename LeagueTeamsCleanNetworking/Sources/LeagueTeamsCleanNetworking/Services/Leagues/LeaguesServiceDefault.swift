@@ -23,6 +23,6 @@ extension LeaguesServiceDefault: LeaguesService {
     public func fetchAllLeagues() async throws -> [LeagueDTO] {
         let request = LeaguesRequest.allLeagues
         let leaguesResponse: LeaguesDTOResponse = try await requestManager.perform(request)
-        return leaguesResponse.leagues.map { $0 }
+        return leaguesResponse.leagues
     }
 }

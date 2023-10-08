@@ -39,8 +39,8 @@ final class GetTeamsUseCaseTests: XCTestCase {
         
         // THEN
         XCTAssertEqual(filteredTeams, [.psg, .marseille, .monaco])
-        XCTAssertEqual(filteredTeams.count, 3, "Filtered teams count should be equals to 2")
-        XCTAssertEqual(filteredTeams.first, .psg, "FC Nantes should be the first")
+        XCTAssertEqual(filteredTeams.count, 3, "Filtered teams count should be equals to 3")
+        XCTAssertEqual(filteredTeams.first, .psg, "PSG should be the first")
 
     }
 }

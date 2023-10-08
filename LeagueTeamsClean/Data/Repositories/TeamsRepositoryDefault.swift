@@ -26,7 +26,6 @@ extension TeamsRepositoryDefault: TeamsRepository {
         let request = TeamsRequest.getTeamsForLeague(name: league.name)
         let teamsResponse: TeamsDTOResponse = try await
         requestManager.perform(request)
-        let teams = teamsResponse.teams.compactMap(Team.init)
-        return teams
+        return teamsResponse.teams.compactMap(Team.init)
     }
 }

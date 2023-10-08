@@ -24,7 +24,7 @@ struct TeamsView: View {
             } else {
                 ScrollView {
                     LazyVGrid(columns: columns) {
-                        ForEach(viewModel.teams, id: \.self) { team in
+                        ForEach(viewModel.teams) { team in
                             NavigationLink {
                                 TeamDetailView(viewModel: TeamDetailViewModel(team: team))
                             } label: {

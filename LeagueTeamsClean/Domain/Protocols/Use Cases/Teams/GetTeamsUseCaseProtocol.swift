@@ -50,7 +50,7 @@ extension Array {
      ]
 
      let filteredTeams = teams.filteredOneOutOfTwo()
-     print(filteredTeams)  // This will print details of "Team B", "Team D"
+     print(filteredTeams)  // This will print details of "Team A", "Team C" and "Team E"
     ```
     */
     func filteredOneOutOfTwo() -> [Element] where Element == Team {

@@ -3,7 +3,7 @@ import Foundation
 /// Represents a data transfer object for a team associated to a league.
 ///
 /// This struct is designed to map team information, typically fetched from a JSON API.
-public struct TeamDTO: Decodable, Hashable {
+public struct TeamDTO: Decodable {
 
     /// Unique identifier for the team.
     public let idTeam: String?

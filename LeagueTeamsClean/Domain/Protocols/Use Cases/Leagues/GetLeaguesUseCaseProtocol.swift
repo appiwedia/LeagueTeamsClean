@@ -22,4 +22,3 @@ protocol GetLeaguesUseCaseProtocol {
     /// - Throws: An error if there was an issue fetching the leagues.
     func execute() async throws -> [League]
 }
-

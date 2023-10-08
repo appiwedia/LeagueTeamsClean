@@ -24,6 +24,6 @@ extension TeamsServiceDefault: TeamsService {
     public func fetchTeams(for leagueName: String) async throws -> [TeamDTO] {
         let request = TeamsRequest.getTeamsForLeague(name: leagueName)
         let teamsResponse: TeamsDTOResponse = try await requestManager.perform(request)
-        return teamsResponse.teams.map { $0 }
+        return teamsResponse.teams
     }
 }
