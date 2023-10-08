@@ -11,21 +11,26 @@ struct TeamBadgeView: View {
     var team: Team
 
     var body: some View {
-        AsyncImage(url: team.badgeImageUrl, transaction: .init(animation: .spring())) { phase in
-            switch phase {
-            case .empty:
-                ProgressView()
-            case .success(let image):
-                image
-                    .resizable()
-                    .scaledToFit()
-                    .transition(.opacity.combined(with: .scale))
-            case .failure:
-                ProgressView()
-            @unknown default:
-                Color.gray
-            }
-        }.padding()
+        VStack {
+            AsyncImage(url: team.badgeImageUrl, transaction: .init(animation: .spring())) { phase in
+                switch phase {
+                case .empty:
+                    ProgressView()
+                case .success(let image):
+                    image
+                        .resizable()
+                        .scaledToFit()
+                        .transition(.opacity.combined(with: .scale))
+                case .failure:
+                    ProgressView()
+                @unknown default:
+                    Color.gray
+                }
+            }.padding()
+            
+            Text(team.name ?? "")
+                .foregroundColor(.black)
+        }
     }
 }
 

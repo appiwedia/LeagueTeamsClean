@@ -25,6 +25,6 @@ extension Team {
         
         self.country = dto.strCountry
         self.league = dto.strLeague
-        self.descriptionEN = dto.strDescriptionEn
+        self.descriptionEN = dto.strDescriptionEN
     }
 }

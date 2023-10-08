@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		306BD8C82AD2A26000F6751B /* LeagueTeamsCleanNetworking in Frameworks */ = {isa = PBXBuildFile; productRef = 306BD8C72AD2A26000F6751B /* LeagueTeamsCleanNetworking */; };
 		308B10B22ACF4DF800D450FD /* LeagueTeamsCleanApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 308B10B12ACF4DF800D450FD /* LeagueTeamsCleanApp.swift */; };
 		308B10B62ACF4DF900D450FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 308B10B52ACF4DF900D450FD /* Assets.xcassets */; };
 		308B10B92ACF4DF900D450FD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 308B10B82ACF4DF900D450FD /* Preview Assets.xcassets */; };
@@ -33,7 +34,6 @@
 		308B11582ACF623300D450FD /* search_all_teams.php.json in Resources */ = {isa = PBXBuildFile; fileRef = 308B11542ACF60B600D450FD /* search_all_teams.php.json */; };
 		308B115C2ACF697600D450FD /* LeagueRepositoryDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = 308B115B2ACF697600D450FD /* LeagueRepositoryDefault.swift */; };
 		308B115E2ACF6B0200D450FD /* TeamsRepositoryDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = 308B115D2ACF6B0200D450FD /* TeamsRepositoryDefault.swift */; };
-		30E8875B2AD02D5D005D6715 /* LeagueTeamsCleanNetworking in Frameworks */ = {isa = PBXBuildFile; productRef = 30E8875A2AD02D5D005D6715 /* LeagueTeamsCleanNetworking */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +47,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		306BD8C62AD2A1E400F6751B /* LeagueTeamsCleanNetworking */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = LeagueTeamsCleanNetworking; sourceTree = "<group>"; };
 		308B10AE2ACF4DF800D450FD /* LeagueTeamsClean.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LeagueTeamsClean.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		308B10B12ACF4DF800D450FD /* LeagueTeamsCleanApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeagueTeamsCleanApp.swift; sourceTree = "<group>"; };
 		308B10B52ACF4DF900D450FD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -75,7 +76,6 @@
 		308B115B2ACF697600D450FD /* LeagueRepositoryDefault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeagueRepositoryDefault.swift; sourceTree = "<group>"; };
 		308B115D2ACF6B0200D450FD /* TeamsRepositoryDefault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamsRepositoryDefault.swift; sourceTree = "<group>"; };
 		308B115F2ACF6FB600D450FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
-		30E887572AD02B9D005D6715 /* LeagueTeamsCleanNetworking */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = LeagueTeamsCleanNetworking; path = ../../LeagueTeamsCleanNetworking; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,7 +83,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				30E8875B2AD02D5D005D6715 /* LeagueTeamsCleanNetworking in Frameworks */,
+				306BD8C82AD2A26000F6751B /* LeagueTeamsCleanNetworking in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -100,6 +100,7 @@
 		308B10A52ACF4DF800D450FD = {
 			isa = PBXGroup;
 			children = (
+				306BD8C62AD2A1E400F6751B /* LeagueTeamsCleanNetworking */,
 				308B10B02ACF4DF800D450FD /* LeagueTeamsClean */,
 				308B10C22ACF4DF900D450FD /* LeagueTeamsCleanTests */,
 				308B10AF2ACF4DF800D450FD /* Products */,
@@ -119,7 +120,6 @@
 		308B10B02ACF4DF800D450FD /* LeagueTeamsClean */ = {
 			isa = PBXGroup;
 			children = (
-				30E887572AD02B9D005D6715 /* LeagueTeamsCleanNetworking */,
 				308B115F2ACF6FB600D450FD /* Info.plist */,
 				308B10E12ACF4EDE00D450FD /* App */,
 				308B10F12ACF543900D450FD /* DI */,
@@ -397,7 +397,7 @@
 			);
 			name = LeagueTeamsClean;
 			packageProductDependencies = (
-				30E8875A2AD02D5D005D6715 /* LeagueTeamsCleanNetworking */,
+				306BD8C72AD2A26000F6751B /* LeagueTeamsCleanNetworking */,
 			);
 			productName = LeagueTeamsClean;
 			productReference = 308B10AE2ACF4DF800D450FD /* LeagueTeamsClean.app */;
@@ -796,7 +796,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		30E8875A2AD02D5D005D6715 /* LeagueTeamsCleanNetworking */ = {
+		306BD8C72AD2A26000F6751B /* LeagueTeamsCleanNetworking */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = LeagueTeamsCleanNetworking;
 		};
