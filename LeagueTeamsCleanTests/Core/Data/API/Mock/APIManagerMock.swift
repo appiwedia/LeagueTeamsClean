@@ -1,12 +1,4 @@
-//
-//  APIManagerMock.swift
-//  LeagueTeamsCleanTests
-//
-//  Created by Mickael Mas on 27/11/2022.
-//
-
 import Foundation
-@testable import LeagueTeamsClean
 @testable import LeagueTeamsCleanNetworking
 
 enum APIManagerError: Error {

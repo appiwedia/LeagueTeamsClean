@@ -1,7 +1,7 @@
 import Foundation
 
 /// A concrete implementation of the ``DataParserProtocol`` that uses `JSONDecoder` to parse JSON data.
-class JSONDataParser: DataParserProtocol {
+final class JSONDataParser: DataParserProtocol {
     
     /// The JSON decoder used to decode JSON data.
     private var jsonDecoder: JSONDecoder

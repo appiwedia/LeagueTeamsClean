@@ -6,8 +6,7 @@
 //
 
 import Foundation
-@testable import LeagueTeamsClean
-@testable import LeagueTeamsCleanNetworking
+import LeagueTeamsCleanNetworking
 
 struct TeamsRepositoryMock {
     private let requestManager: RequestManagerProtocol
@@ -16,6 +15,7 @@ struct TeamsRepositoryMock {
         self.requestManager = requestManager
     }
 }
+
 
 extension TeamsRepositoryMock: TeamsRepository {
     func fetchTeams(for league: League) async throws -> [Team] {
