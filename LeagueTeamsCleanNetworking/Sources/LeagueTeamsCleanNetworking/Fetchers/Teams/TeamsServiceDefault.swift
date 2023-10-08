@@ -1,14 +1,14 @@
 import Foundation
 
-/// A fetcher responsible for managiing and performing team-related API requests.
-public struct TeamsFetcherDefault {
+/// A service responsible for managiing and performing team-related API requests.
+public struct TeamsServiceDefault {
     
     /// The request manager used to handle and execute API requests.
     private let requestManager: RequestManagerProtocol
     
-    /// Initializes a new instance of `TeamsFetcherDefault`.
+    /// Initializes a new instance of ``TeamsServiceDefault``.
     ///
-    /// - Parameter requestManager: The request manager responsible for managing and executing API requests. Defaults to a default `RequestManager` instance.
+    /// - Parameter requestManager: The request manager responsible for managing and executing API requests. Defaults to a default ``RequestManager`` instance.
     init(requestManager: RequestManagerProtocol = RequestManager()) {
         self.requestManager = requestManager
     }
@@ -16,7 +16,7 @@ public struct TeamsFetcherDefault {
 
 
 // MARK: - Teams fetcher
-extension TeamsFetcherDefault: TeamsFetcher {
+extension TeamsServiceDefault: TeamsService {
     /**
      Fetches all available teams asynchronously for a league name.
      - Returns: An array of ``TeamDTO`` objects representing the fetched teams for a league.

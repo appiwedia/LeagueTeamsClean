@@ -7,6 +7,7 @@
 
 import Foundation
 @testable import LeagueTeamsClean
+@testable import LeagueTeamsCleanNetworking
 
 enum APIManagerError: Error {
     case noMockFileDefined

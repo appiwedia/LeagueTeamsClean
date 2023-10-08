@@ -17,8 +17,8 @@ final class TeamsViewModel: ObservableObject {
 
     private var leagues: [League] = []
 
-    private let teamsService: TeamsRepository
-    private let leaguesService: LeaguesRepository
+    private let teamsUseCase: GetTeamsUseCase
+    private let leaguesUseCase: GetLeaguesUseCase
 
     var navigationTitle: String {
         selectedLeague?.name ?? "FDJ Leagues"
@@ -29,18 +29,18 @@ final class TeamsViewModel: ObservableObject {
             if searchText.isEmpty {
                 return true
             }
-            return $0.name?.contains(searchText) ?? false
+            return $0.name.contains(searchText)
         }
     }
 
     init(
         isLoading: Bool = true,
-        teamsService: TeamsRepository,
-        leaguesService: LeaguesRepository
+        teamsUseCase: GetTeamsUseCase,
+        leaguesUseCase: GetLeaguesUseCase
     ) {
         self.isLoading = isLoading
-        self.teamsService = teamsService
-        self.leaguesService = leaguesService
+        self.teamsUseCase = teamsUseCase
+        self.leaguesUseCase = leaguesUseCase
 
         Task {
             await fetchAllLeagues()
@@ -49,7 +49,7 @@ final class TeamsViewModel: ObservableObject {
 
     func fetchTeams(for league: League) async {
         do {
-            self.teams = try await teamsService.fetchTeams(for: league)
+            self.teams = try await teamsUseCase.execute(league: league)
             await stopLoading()
         } catch {
             print("Error fetching teams...\(error.localizedDescription)")
@@ -58,7 +58,7 @@ final class TeamsViewModel: ObservableObject {
 
     func fetchAllLeagues() async {
         do {
-            self.leagues = try await leaguesService.fetchAllLeagues()
+            self.leagues = try await leaguesUseCase.execute()
         } catch {
             print("Error fetching leagues...\(error.localizedDescription)")
         }

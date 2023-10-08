@@ -29,7 +29,7 @@ struct TeamBadgeView: View {
             }.padding()
             
             Text(team.name ?? "")
-                .foregroundColor(.black)
+                .foregroundColor(.primary)
         }
     }
 }

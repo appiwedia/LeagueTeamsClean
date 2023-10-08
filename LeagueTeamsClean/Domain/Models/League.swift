@@ -3,21 +3,9 @@ import Foundation
 struct League: Identifiable {
 
     let id: Int
-    let name: String?
+    let name: String
     let sport: String?
     let leagueAlternate: String?
-
-    init(
-        id: Int,
-        name: String? = nil,
-        sport: String? = nil,
-        leagueAlternate: String? = nil
-    ) {
-        self.id = id
-        self.name = name
-        self.sport = sport
-        self.leagueAlternate = leagueAlternate
-    }
 }
 
 extension League {

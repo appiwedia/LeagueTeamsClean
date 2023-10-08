@@ -50,9 +50,9 @@ struct TeamsView: View {
 struct LeaguesView_Previews: PreviewProvider {
     static var previews: some View {
         TeamsView(
-            viewModel: TeamsViewModel(
-                teamsService: TeamsRepositoryDefault(),
-                leaguesService: LeaguesRepositoryDefault()
+            viewModel: .init(
+                teamsUseCase: GetTeamsUseCase(),
+                leaguesUseCase: GetLeaguesUseCase()
             )
         )
     }

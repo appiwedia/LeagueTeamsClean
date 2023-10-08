@@ -7,6 +7,7 @@
 
 import Foundation
 @testable import LeagueTeamsClean
+@testable import LeagueTeamsCleanNetworking
 
 struct TeamsRepositoryMock {
     private let requestManager: RequestManagerProtocol
@@ -17,18 +18,10 @@ struct TeamsRepositoryMock {
 }
 
 extension TeamsRepositoryMock: TeamsRepository {
-    func fetchTeams(for league: League) async throws -> [Team] {
-        guard  let leagueName = league.name else { return [] }
-
-        let request = TeamsRequest.getTeamsForLeague(name: leagueName)
-        do {
-            let teamsResponse: TeamsDTOResponse = try await
-            requestManager.perform(request)
-            let teams = teamsResponse.teams.compactMap(Team.init)
-            return filteredOneOutOfTwo(teams: teams).antiAlphabeticSort()
-        } catch {
-            print(error.localizedDescription)
-            return []
-        }
+    func fetchTeams(for league: LeagueTeamsClean.League) async throws -> [LeagueTeamsClean.Team] {
+        let request = TeamsRequest.getTeamsForLeague(name: league.name)
+        let teamsResponse: TeamsDTOResponse = try await
+        requestManager.perform(request)
+        return teamsResponse.teams.compactMap(LeagueTeamsClean.Team.init)
     }
 }

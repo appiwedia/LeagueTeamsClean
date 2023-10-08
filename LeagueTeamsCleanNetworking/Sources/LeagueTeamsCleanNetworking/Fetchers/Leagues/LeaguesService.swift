@@ -1,5 +1,5 @@
 /// A protocol that defines the requirements for fetching league-related data.
-public protocol LeaguesFetcher {
+public protocol LeaguesService {
     
     /// Fetches all available leagues.
     ///

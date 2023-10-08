@@ -9,35 +9,19 @@ import Foundation
 import LeagueTeamsCleanNetworking
 
 struct LeaguesRepositoryDefault {
-    private let requestManager: RequestManagerProtocol
+    private let leaguesService: LeaguesService
 
-    init(requestManager: RequestManagerProtocol = RequestManager()) {
-        self.requestManager = requestManager
+    init(leaguesService: LeaguesService = LeaguesServiceDefault()) {
+        self.leaguesService = leaguesService
     }
 }
 
-// MARK: - LeaguesRepositoryDefault
 extension LeaguesRepositoryDefault: LeaguesRepository {
-    /**
-     Fetches all available leagues asynchronously.
-     - Returns: An array of ``League`` objects representing the fetched leagues.
-    */
+    
+    /// Fetches all available leagues asynchronously.
+    /// - Returns: An array of ``League`` objects representing the fetched leagues.
     func fetchAllLeagues() async throws -> [League] {
-        let request = LeaguesRequest.allLeagues
-        do {
-            let leaguesResponse: LeaguesDTOResponse = try await
-            requestManager.perform(request)
-            return leaguesResponse.leagues.map(League.init)
-        } catch {
-            throw LeagueRepositoryError.mappingError
-        }
-    }
-}
-
-// MARK: - Errors
-private extension LeaguesRepositoryDefault {
-    enum LeagueRepositoryError: Error {
-        /// A mapping error
-        case mappingError
+        let leagues = try await leaguesService.fetchAllLeagues()
+        return leagues.compactMap(League.init)
     }
 }

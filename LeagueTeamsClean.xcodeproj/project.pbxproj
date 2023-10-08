@@ -8,6 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		306BD8C82AD2A26000F6751B /* LeagueTeamsCleanNetworking in Frameworks */ = {isa = PBXBuildFile; productRef = 306BD8C72AD2A26000F6751B /* LeagueTeamsCleanNetworking */; };
+		306BD8CE2AD2D7B400F6751B /* GetTeamsUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 306BD8CD2AD2D7B400F6751B /* GetTeamsUseCase.swift */; };
+		306BD8D42AD2DAFC00F6751B /* GetTeamsUseCaseProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 306BD8D32AD2DAFC00F6751B /* GetTeamsUseCaseProtocol.swift */; };
+		306BD8D82AD2DDB400F6751B /* GetLeaguesUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 306BD8D72AD2DDB400F6751B /* GetLeaguesUseCase.swift */; };
+		306BD8D92AD2DE1700F6751B /* GetLeaguesUseCaseProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 306BD8D62AD2DD3800F6751B /* GetLeaguesUseCaseProtocol.swift */; };
+		306BD8DB2AD2DE1F00F6751B /* GetTeamsUseCaseProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 306BD8D32AD2DAFC00F6751B /* GetTeamsUseCaseProtocol.swift */; };
+		306BD8EA2AD2FD7B00F6751B /* League.swift in Sources */ = {isa = PBXBuildFile; fileRef = 308B11122ACF55DB00D450FD /* League.swift */; };
+		306BD8EB2AD2FF2D00F6751B /* TeamsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 308B11382ACF57E900D450FD /* TeamsRepository.swift */; };
+		306BD8EC2AD2FF3600F6751B /* LeaguesRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 308B11392ACF57F400D450FD /* LeaguesRepository.swift */; };
+		306BD8ED2AD3004300F6751B /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = 308B110F2ACF55D700D450FD /* Team.swift */; };
 		308B10B22ACF4DF800D450FD /* LeagueTeamsCleanApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 308B10B12ACF4DF800D450FD /* LeagueTeamsCleanApp.swift */; };
 		308B10B62ACF4DF900D450FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 308B10B52ACF4DF900D450FD /* Assets.xcassets */; };
 		308B10B92ACF4DF900D450FD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 308B10B82ACF4DF900D450FD /* Preview Assets.xcassets */; };
@@ -24,8 +33,6 @@
 		308B11292ACF574600D450FD /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = 308B110F2ACF55D700D450FD /* Team.swift */; };
 		308B113A2ACF57FB00D450FD /* LeaguesRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 308B11392ACF57F400D450FD /* LeaguesRepository.swift */; };
 		308B113B2ACF57FB00D450FD /* TeamsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 308B11382ACF57E900D450FD /* TeamsRepository.swift */; };
-		308B11482ACF599F00D450FD /* TeamsRepositoryMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 308B11402ACF598D00D450FD /* TeamsRepositoryMock.swift */; };
-		308B11492ACF599F00D450FD /* FetchTeamsServicesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 308B11452ACF598D00D450FD /* FetchTeamsServicesTests.swift */; };
 		308B114A2ACF599F00D450FD /* RequestManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 308B11412ACF598D00D450FD /* RequestManagerTests.swift */; };
 		308B114B2ACF599F00D450FD /* APIManagerMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 308B11422ACF598D00D450FD /* APIManagerMock.swift */; };
 		308B11552ACF623200D450FD /* all_leagues.php.json in Resources */ = {isa = PBXBuildFile; fileRef = 308B11532ACF600D00D450FD /* all_leagues.php.json */; };
@@ -48,6 +55,11 @@
 
 /* Begin PBXFileReference section */
 		306BD8C62AD2A1E400F6751B /* LeagueTeamsCleanNetworking */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = LeagueTeamsCleanNetworking; sourceTree = "<group>"; };
+		306BD8CD2AD2D7B400F6751B /* GetTeamsUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetTeamsUseCase.swift; sourceTree = "<group>"; };
+		306BD8D32AD2DAFC00F6751B /* GetTeamsUseCaseProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetTeamsUseCaseProtocol.swift; sourceTree = "<group>"; };
+		306BD8D62AD2DD3800F6751B /* GetLeaguesUseCaseProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetLeaguesUseCaseProtocol.swift; sourceTree = "<group>"; };
+		306BD8D72AD2DDB400F6751B /* GetLeaguesUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetLeaguesUseCase.swift; sourceTree = "<group>"; };
+		306BD8E12AD2F63000F6751B /* GetTeamsUseCaseMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetTeamsUseCaseMock.swift; sourceTree = "<group>"; };
 		308B10AE2ACF4DF800D450FD /* LeagueTeamsClean.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LeagueTeamsClean.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		308B10B12ACF4DF800D450FD /* LeagueTeamsCleanApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeagueTeamsCleanApp.swift; sourceTree = "<group>"; };
 		308B10B52ACF4DF900D450FD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -70,7 +82,7 @@
 		308B11402ACF598D00D450FD /* TeamsRepositoryMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamsRepositoryMock.swift; sourceTree = "<group>"; };
 		308B11412ACF598D00D450FD /* RequestManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestManagerTests.swift; sourceTree = "<group>"; };
 		308B11422ACF598D00D450FD /* APIManagerMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManagerMock.swift; sourceTree = "<group>"; };
-		308B11452ACF598D00D450FD /* FetchTeamsServicesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchTeamsServicesTests.swift; sourceTree = "<group>"; };
+		308B11452ACF598D00D450FD /* GetTeamsUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetTeamsUseCaseTests.swift; sourceTree = "<group>"; };
 		308B11532ACF600D00D450FD /* all_leagues.php.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = all_leagues.php.json; sourceTree = "<group>"; };
 		308B11542ACF60B600D450FD /* search_all_teams.php.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = search_all_teams.php.json; sourceTree = "<group>"; };
 		308B115B2ACF697600D450FD /* LeagueRepositoryDefault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeagueRepositoryDefault.swift; sourceTree = "<group>"; };
@@ -97,6 +109,71 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		306BD8CF2AD2D8BE00F6751B /* Leagues */ = {
+			isa = PBXGroup;
+			children = (
+				306BD8D72AD2DDB400F6751B /* GetLeaguesUseCase.swift */,
+			);
+			path = Leagues;
+			sourceTree = "<group>";
+		};
+		306BD8D02AD2D8C500F6751B /* Teams */ = {
+			isa = PBXGroup;
+			children = (
+				306BD8CD2AD2D7B400F6751B /* GetTeamsUseCase.swift */,
+			);
+			path = Teams;
+			sourceTree = "<group>";
+		};
+		306BD8D12AD2DAC200F6751B /* Use Cases */ = {
+			isa = PBXGroup;
+			children = (
+				306BD8D52AD2DD2B00F6751B /* Leagues */,
+				306BD8D22AD2DAD600F6751B /* Teams */,
+			);
+			path = "Use Cases";
+			sourceTree = "<group>";
+		};
+		306BD8D22AD2DAD600F6751B /* Teams */ = {
+			isa = PBXGroup;
+			children = (
+				306BD8D32AD2DAFC00F6751B /* GetTeamsUseCaseProtocol.swift */,
+			);
+			path = Teams;
+			sourceTree = "<group>";
+		};
+		306BD8D52AD2DD2B00F6751B /* Leagues */ = {
+			isa = PBXGroup;
+			children = (
+				306BD8D62AD2DD3800F6751B /* GetLeaguesUseCaseProtocol.swift */,
+			);
+			path = Leagues;
+			sourceTree = "<group>";
+		};
+		306BD8DE2AD2F61600F6751B /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+				306BD8DF2AD2F61D00F6751B /* Domain */,
+			);
+			path = Mock;
+			sourceTree = "<group>";
+		};
+		306BD8DF2AD2F61D00F6751B /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				306BD8E02AD2F62400F6751B /* UseCases */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		306BD8E02AD2F62400F6751B /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				306BD8E12AD2F63000F6751B /* GetTeamsUseCaseMock.swift */,
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
 		308B10A52ACF4DF800D450FD = {
 			isa = PBXGroup;
 			children = (
@@ -146,6 +223,7 @@
 		308B10C22ACF4DF900D450FD /* LeagueTeamsCleanTests */ = {
 			isa = PBXGroup;
 			children = (
+				306BD8DE2AD2F61600F6751B /* Mock */,
 				308B113C2ACF598D00D450FD /* Core */,
 			);
 			path = LeagueTeamsCleanTests;
@@ -164,7 +242,7 @@
 			children = (
 				308B10EB2ACF528500D450FD /* Mappers */,
 				308B10EC2ACF528D00D450FD /* Models */,
-				308B10ED2ACF52C300D450FD /* RepositoriesProtocol */,
+				308B10ED2ACF52C300D450FD /* Protocols */,
 				30E887582AD02CB2005D6715 /* UseCases */,
 			);
 			path = Domain;
@@ -229,13 +307,14 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
-		308B10ED2ACF52C300D450FD /* RepositoriesProtocol */ = {
+		308B10ED2ACF52C300D450FD /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
+				306BD8D12AD2DAC200F6751B /* Use Cases */,
 				308B11392ACF57F400D450FD /* LeaguesRepository.swift */,
 				308B11382ACF57E900D450FD /* TeamsRepository.swift */,
 			);
-			path = RepositoriesProtocol;
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 		308B10EE2ACF53EF00D450FD /* Modules */ = {
@@ -361,7 +440,7 @@
 		308B11442ACF598D00D450FD /* Teams */ = {
 			isa = PBXGroup;
 			children = (
-				308B11452ACF598D00D450FD /* FetchTeamsServicesTests.swift */,
+				308B11452ACF598D00D450FD /* GetTeamsUseCaseTests.swift */,
 			);
 			path = Teams;
 			sourceTree = "<group>";
@@ -369,6 +448,8 @@
 		30E887582AD02CB2005D6715 /* UseCases */ = {
 			isa = PBXGroup;
 			children = (
+				306BD8D02AD2D8C500F6751B /* Teams */,
+				306BD8CF2AD2D8BE00F6751B /* Leagues */,
 			);
 			path = UseCases;
 			sourceTree = "<group>";
@@ -489,10 +570,12 @@
 			files = (
 				308B11292ACF574600D450FD /* Team.swift in Sources */,
 				308B115E2ACF6B0200D450FD /* TeamsRepositoryDefault.swift in Sources */,
+				306BD8D82AD2DDB400F6751B /* GetLeaguesUseCase.swift in Sources */,
 				308B10F32ACF545A00D450FD /* AppDI.swift in Sources */,
 				308B11242ACF573200D450FD /* TeamsViewModel.swift in Sources */,
 				308B11212ACF573200D450FD /* LeagueListView.swift in Sources */,
 				308B10B22ACF4DF800D450FD /* LeagueTeamsCleanApp.swift in Sources */,
+				306BD8D92AD2DE1700F6751B /* GetLeaguesUseCaseProtocol.swift in Sources */,
 				308B11272ACF574600D450FD /* Team+DTO.swift in Sources */,
 				308B113B2ACF57FB00D450FD /* TeamsRepository.swift in Sources */,
 				308B11262ACF574600D450FD /* League+DTO.swift in Sources */,
@@ -500,9 +583,11 @@
 				308B11232ACF573200D450FD /* TeamDetailViewModel.swift in Sources */,
 				308B11202ACF573200D450FD /* TeamBadgeView.swift in Sources */,
 				308B11282ACF574600D450FD /* League.swift in Sources */,
+				306BD8D42AD2DAFC00F6751B /* GetTeamsUseCaseProtocol.swift in Sources */,
 				308B113A2ACF57FB00D450FD /* LeaguesRepository.swift in Sources */,
 				308B115C2ACF697600D450FD /* LeagueRepositoryDefault.swift in Sources */,
 				308B11252ACF573200D450FD /* TeamsView.swift in Sources */,
+				306BD8CE2AD2D7B400F6751B /* GetTeamsUseCase.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -510,9 +595,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				306BD8EB2AD2FF2D00F6751B /* TeamsRepository.swift in Sources */,
+				306BD8EA2AD2FD7B00F6751B /* League.swift in Sources */,
 				308B114B2ACF599F00D450FD /* APIManagerMock.swift in Sources */,
-				308B11492ACF599F00D450FD /* FetchTeamsServicesTests.swift in Sources */,
-				308B11482ACF599F00D450FD /* TeamsRepositoryMock.swift in Sources */,
+				306BD8DB2AD2DE1F00F6751B /* GetTeamsUseCaseProtocol.swift in Sources */,
+				306BD8EC2AD2FF3600F6751B /* LeaguesRepository.swift in Sources */,
+				306BD8ED2AD3004300F6751B /* Team.swift in Sources */,
 				308B114A2ACF599F00D450FD /* RequestManagerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

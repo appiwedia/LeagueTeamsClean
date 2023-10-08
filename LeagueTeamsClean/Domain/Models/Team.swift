@@ -7,15 +7,9 @@
 
 import Foundation
 
-struct Team: Identifiable, Hashable, Comparable {
-    static func < (lhs: Team, rhs: Team) -> Bool {
-        guard let teamName1 = lhs.name, let teamName2 = rhs.name else {
-            return false
-        }
-        return teamName1 < teamName2
-    }
+struct Team: Identifiable, Hashable {
 
-    var id: Int = 0
+    var id: Int
     let name: String?
     let badgeImageUrl: URL?
     let bannerImageUrl: URL?
@@ -42,6 +36,17 @@ struct Team: Identifiable, Hashable, Comparable {
     }
 }
 
+// MARK: - Comparable
+extension Team: Comparable {
+    static func < (lhs: Team, rhs: Team) -> Bool {
+        guard let teamName1 = lhs.name, let teamName2 = rhs.name else {
+            return false
+        }
+        return teamName1 < teamName2
+    }
+}
+
+// MARK: - Mocks
 extension Team {
     static var mockTeams: [Team] {
         [

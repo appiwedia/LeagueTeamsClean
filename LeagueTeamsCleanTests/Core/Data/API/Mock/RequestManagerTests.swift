@@ -7,6 +7,7 @@
 
 import XCTest
 @testable import LeagueTeamsClean
+@testable import LeagueTeamsCleanNetworking
 
 final class RequestManagerTests: XCTestCase {
     

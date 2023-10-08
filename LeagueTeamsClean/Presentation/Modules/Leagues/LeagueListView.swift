@@ -17,10 +17,10 @@ struct LeagueListView: View {
     var body: some View {
         List(filteredLeagues) { league in
             Button {
-                searchText = league.name ?? ""
+                searchText = league.name
                 selectLeague(league)
             } label: {
-                Text(league.name ?? "")
+                Text(league.name)
             }
         }
     }
@@ -28,6 +28,10 @@ struct LeagueListView: View {
 
 struct LeagueListView_Previews: PreviewProvider {
     static var previews: some View {
-        LeagueListView(filteredLeagues: [League.ligue1], searchText: .constant(""), selectLeague: { league in })
+        LeagueListView(
+            filteredLeagues: [League.ligue1],
+            searchText: .constant(""),
+            selectLeague: { _ in }
+        )
     }
 }

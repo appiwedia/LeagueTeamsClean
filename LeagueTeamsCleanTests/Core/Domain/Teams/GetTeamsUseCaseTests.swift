@@ -7,15 +7,16 @@
 
 import XCTest
 @testable import LeagueTeamsClean
+@testable import LeagueTeamsCleanNetworking
 
-final class FetchTeamsServicesTests: XCTestCase {
+final class GetTeamsUseCaseTests: XCTestCase {
 
-    var requestManager = RequestManager(apiManager: APIManagerMock())
-    var teamsRepository: TeamsRepository?
+    var requestManagerMock = RequestManager(apiManager: APIManagerMock())
+    var teamsUseCase: GetTeamsUseCase?
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
-        teamsRepository = TeamsRepositoryMock(requestManager: requestManager)
+        teamsUseCase = GetTeamsUseCase(teamsRepository: TeamsRepositoryMock())
     }
 
     override func tearDownWithError() throws {
@@ -24,7 +25,7 @@ final class FetchTeamsServicesTests: XCTestCase {
 
     func testAntiAlphabeticSort() async throws {
 
-        guard let ligue1Teams = try await teamsRepository?.fetchTeams(for: .ligue1) else {
+        guard let ligue1Teams = try await teamsUseCase?.execute(league: .ligue1) else {
             XCTFail("Teams should not be nil")
             return
         }

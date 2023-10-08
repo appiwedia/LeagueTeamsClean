@@ -1,5 +1,5 @@
 /// A protocol that defines the requirements for fetching team-related data based on league names.
-public protocol TeamsFetcher {
+public protocol TeamsService {
     
     /// Fetches all teams associated with a specified league.
     ///
