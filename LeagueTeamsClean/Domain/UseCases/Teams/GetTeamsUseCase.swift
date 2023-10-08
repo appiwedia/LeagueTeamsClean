@@ -10,9 +10,10 @@ struct GetTeamsUseCase {
     }
 }
 
-// MARK: - Business rule 1
 extension GetTeamsUseCase: GetTeamsUseCaseProtocol {
     func execute(league: League) async throws -> [Team] {
-        return try await teamsRepository.fetchTeams(for: league)
+        let teams = try await teamsRepository.fetchTeams(for: league)
+        let filteredTeams = teams.filteredOneOutOfTwo()
+        return filteredTeams.antiAlphabeticSort()
     }
 }

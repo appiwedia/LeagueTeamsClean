@@ -179,6 +179,15 @@
 			path = UseCases;
 			sourceTree = "<group>";
 		};
+		306BD8F42AD3184F00F6751B /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				308B11542ACF60B600D450FD /* search_all_teams.php.json */,
+				308B11532ACF600D00D450FD /* all_leagues.php.json */,
+			);
+			path = JSON;
+			sourceTree = "<group>";
+		};
 		308B10A52ACF4DF800D450FD = {
 			isa = PBXGroup;
 			children = (
@@ -218,8 +227,7 @@
 		308B10B72ACF4DF900D450FD /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				308B11542ACF60B600D450FD /* search_all_teams.php.json */,
-				308B11532ACF600D00D450FD /* all_leagues.php.json */,
+				306BD8F42AD3184F00F6751B /* JSON */,
 				308B10B82ACF4DF900D450FD /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
